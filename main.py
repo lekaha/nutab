@@ -9,6 +9,7 @@ History:
 Who          When                  What
 ---------------------------------------
 John         2014/7/25             Divide handler
+John         2014/7/25             Etablish public and private route area.
 
 '''
 from secrets import SESSION_KEY
@@ -28,7 +29,10 @@ app_config = {
 
 # Map URLs to handlers
 routes = [
+#   Public:
   Route('/', handler='MainHandler.RootHandler')
+  
+#   Private:
 #   ,Route('/xxx', handler='handlers.XXXHandler')
 ]
 
