@@ -30,7 +30,8 @@ app_config = {
 # Map URLs to handlers
 routes = [
 #   Public:
-  Route('/', handler='MainHandler.RootHandler')
+  Route('/', handler='MainHandler.RootHandler'),
+  Route('/test', handler='TestHandler.TestHandler')
   
 #   Private:
 #   ,Route('/xxx', handler='handlers.XXXHandler')
